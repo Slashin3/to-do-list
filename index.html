@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task List</title>
+		<style>
+			.tasks-container {
+				margin: 20px;
+				padding: 10px;
+				border: 1px solid #ccc;
+			}
+			.task {
+				padding: 10px;
+				border-bottom: 1px solid #ddd;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.task:last-child {
+				border-bottom: none;
+			}
+			.completed {
+				text-decoration: line-through;
+			}
+			.editable-input {
+				border: none;
+				background: transparent;
+				font-size: 1em;
+				width: 100%;
+			}
+			.editable-input:focus {
+				outline: none;
+			}
+			.edit-button {
+				margin-left: 10px;
+				cursor: pointer;
+			}
+			h1 {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>To-do List</h1>
+		<button id="new-task-btn">+New</button>
+		<div class="tasks-container"></div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
